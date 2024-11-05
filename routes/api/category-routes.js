@@ -54,7 +54,17 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
+  await Category.destroy({
+    where: {
+      id: req.params.id,
+    },
+  })
+  .then((removeCategory) => {
+    res.json(`The category was removed from the database`);
+  })
+  .catch((err) => {
+    res.json(err);
+  });
 });
 
 module.exports = router;
