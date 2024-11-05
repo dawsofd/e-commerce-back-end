@@ -41,3 +41,48 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ## Walkthrough Video
 ![Application walkthrough video](https://)
+
+## Installation 
+
+To clone and navigate to this repository on your local machine, run the following commands:
+
+```
+$ git clone https://github.com/dawsofd/e-commerce-back-end.git
+$ cd e-commerce-backend
+```
+
+Then, install the necessary dependencies by running:
+
+```
+npm install express
+npm install pg
+npm install sequelize
+npm install dotenv
+```
+
+## Usage 
+First, make a copy of the .env.EXAMPLE file and input the correct db credentials.  Save the new file as `.env`.
+
+Second, navigate to the db directory of the project and create `ecommerce_db` by running: 
+
+```
+psql -U postgres
+```
+
+Once the postgres server is running, execute the following command to create the database: 
+
+```
+\i schema.sql
+``
+
+Seed the database by exiting from the postgres server and navigating back to the root directory to run: 
+
+```
+npm run seed
+```
+
+Finally, start the server by running: 
+
+```
+node server.js
+```
