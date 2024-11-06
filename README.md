@@ -73,7 +73,7 @@ Once the postgres server is running, execute the following command to create the
 
 ```
 \i schema.sql
-``
+```
 
 Seed the database by exiting from the postgres server and navigating back to the root directory to run: 
 
