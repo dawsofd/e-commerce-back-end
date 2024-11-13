@@ -40,7 +40,7 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 ![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
 
 ## Walkthrough Video
-![Application walkthrough video](https://drive.google.com/file/d/1wYbRLLUVW2vLkbZWEcc1o31lktpd6HZw/view)
+![Application walkthrough video](https://drive.google.com/file/d/1wYbRLLUVW2vLkbZWEcc1o31lktpd6HZw/view?usp=sharing)
 
 ## Installation 
 
